@@ -39,20 +39,20 @@ export default function EventEmitter() {
          * @param {String} evtName Event name
          * @param {Object} evt Associated source event
          */
-        emit : { value : emit }
+        emit : { value : (evtName, evt) => {
+
+            if ( callbacks.has(evtName) ) {
+
+                callbacks.get(evtName).forEach( cb => cb.callback.call(cb.context, evt) );
+
+            }
+
+        }}
 
     });
 
 
-    function emit(evtName, evt) {
 
-        if ( callbacks.has(evtName) ) {
-
-            callbacks.get(evtName).forEach( cb => cb.callback.call(cb.context, evt) );
-
-        }
-
-    }
 
     return ret;
 
