@@ -17,6 +17,11 @@
     "prebuild" : "npm run eslint",
     "pretest" : "npm run build"
   },
+  "files": [
+    "CHANGELOG.md",
+    "README.md",
+    "dist"
+  ],
   "keywords": [
     "event",
     "emitter",
