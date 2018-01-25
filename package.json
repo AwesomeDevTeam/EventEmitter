@@ -1,6 +1,6 @@
 {
   "name": "@adt/event-emitter",
-  "version": "0.0.1-SNAPSHOT.1",
+  "version": "0.0.1-SNAPSHOT.2",
   "description": "Simple event emmiter implementation",
   "main": "dist/EventEmitter.cjs.js",
   "module": "dist/JsonRpc.esm.js",
@@ -21,6 +21,9 @@
     "eslint" : "eslint src/*",
     "prebuild" : "npm run eslint",
     "pretest" : "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "files": [
     "CHANGELOG.md",
