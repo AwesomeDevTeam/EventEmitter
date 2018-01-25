@@ -1,14 +1,19 @@
 {
   "name": "@adt/event-emitter",
-  "version": "0.0.1",
+  "version": "0.0.1-SNAPSHOT.1",
   "description": "Simple event emmiter implementation",
   "main": "dist/EventEmitter.cjs.js",
   "module": "dist/JsonRpc.esm.js",
   "browser": "dist/JsonRpc.umd.js",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-plugin-external-helpers": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015-rollup": "^3.0.0",
     "eslint": "^4.12.1",
     "jasmine": "^2.8.0",
-    "rollup": "^0.50.0"
+    "rollup": "^0.50.0",
+    "rollup-plugin-babel": "^3.0.3"
   },
   "scripts": {
     "test": "jasmine",
@@ -27,5 +32,9 @@
     "emitter",
     "eventemmiter"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/AwesomeDevTeam/EventEmitter.git"
+  }
 }
