@@ -1,6 +1,6 @@
 {
   "name": "@adt/event-emitter",
-  "version": "0.0.1-SNAPSHOT.2",
+  "version": "0.0.1-SNAPSHOT.3",
   "description": "Simple event emmiter implementation",
   "main": "dist/EventEmitter.cjs.js",
   "module": "dist/JsonRpc.esm.js",
